@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Физика для чайников</title>
+  <style>
+	.butn {
+  cursor: pointer;
+  /* малиновая тень */
+  box-shadow: 4px 4px crimson;
+  /* размеры кнопки */
+  width: 100px;
+  height: 40px;
+  /* граница кнопки */
+  border: 1px solid black;
+  /* белый фон */
+  background-color: white;
+  /* сложная комбинация, чтобы кнопка была по центру экрана */
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  /* уберём подсветку кнопки при клике */
+  outline: none;
+  /* приятно — плавные переходы при наведении */
+  transition: all .4s ease;
+  /* настройки шрифта */
+  font-family: 'Arial Narrow', sans-serif;
+  font-size: 20px;
+}
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@350&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSSindexZ.css">
+  <link rel="icon" type="image" href="ЭН.jpg">
+</head>
+<body>
+ <header class="header">
+    <div class='overlay'>
+      <h1 class="header-title">Физика для чайников</h1>
+    </div>
+  </header>
+  <section class='content'>
+    <div class='card'>
+      <img class="card-image" src="https://images.unsplash.com/photo-1560416313-414b33c856a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80">
+      <h3 class='card-title'>Справочник</h3>
+      <p class='card-text'>В данной вкладке находится таблица по переводу ед. измерений </p>
+	    <div >        </div>
+	    <button onclick="Btn2()">Перейти</button> 
+		
+    </div>
+    <!-- https://images.unsplash.com/photo-1524578271613-d550eacf6090?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80 -->
+    <div class='card no-right-margin'>
+	  <!--<img class="card-image" src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"> -->
+      <img class="card-image" width="120px" height="185px" src="https://images.unsplash.com/photo-1524578271613-d550eacf6090?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+      <h3 class='card-title'>Материал для изучения</h3> 
+      <p class='card-text'>Чтобы начать изучать новую тему-нажмите "Перейти"</p>
+	   <div >        </div>
+	  <p class='card-text'><button onclick="Btn3()">Перейти</button> </p> 
+
+    </div>
+    
+    <div class='card'>
+      <img class="card-image" src="https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"> 
+      <h3 class='card-title'>Банк задач</h3>
+      <p class='card-text'>Тут находятся задачи для самоконтроля с ответами</p>
+	     <div >        </div>
+	  <p class='card-text'><button onclick="Btn4()">Перейти</button> </p>
+    </div>
+    
+    <div class='card no-right-margin'>
+      <img class="card-image" src="https://images.unsplash.com/photo-1520004434532-668416a08753?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+      <h3 class='card-title'>Тест</h3>
+      <p class='card-text'>Нажав кнопку "Перейти", вы можете закрепить новую тему</p>
+	     <div >        </div>
+	  <p class='card-text'><button onclick="Btn5()">Перейти</button> </p>
+    </div>
+  </section>
+  <footer class='footer'>
+    <h4 class=footer-author>©Максим Серемин</h4>
+  </footer>
+   <script src="scriptButton2.js"></script>
+</body>
+</html>
+

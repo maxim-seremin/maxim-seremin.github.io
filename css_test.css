@@ -1,0 +1,39 @@
+body{
+	margin:0;
+}
+.pt{
+	font-weight: 450;
+	font-size: 23px;
+}
+.q1{
+	border: 1px solid ;
+	margin-right: 20%;
+	margin-left: 1%;
+	padding: 5px;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+	margin-bottom: 1%;
+}
+
+.q2{
+	border: 1px solid ;
+	margin-right: 20%;
+	margin-left: 1%;
+	padding: 5px;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+	margin-bottom: 1%;
+}
+
+.q3{
+	border: 1px solid ;
+	margin-right: 20%;
+	margin-left: 1%;
+	padding: 5px;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+	margin-bottom: 1%;
+}
+h2{
+	margin: 1%;
+}
+.mg{
+	margin: 1%;
+}

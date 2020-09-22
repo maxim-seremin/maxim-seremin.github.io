@@ -1,1 +1,1 @@
-# maxim-seremin.github.io
+ФИЗИКА ДЛЯ ЧАЙНИКОВ

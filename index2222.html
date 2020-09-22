@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Физика для чайников</title>
+  <style>
+  .image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto 30px auto;
+  border: 5px solid #fff;
+  box-shadow: 0 0 10px #9e9e9e;
+  border-radius: 4px;
+}
+
+.header-h1 h1 {
+    position: relative;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+  }
+  .header-h1 h1::before {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #000000;
+    bottom: .25rem;
+    left: 50%;
+    width: 30%;
+    transform: translateX(-50%);
+  }
+  .header-h1 h1::after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #000000;
+    bottom: 0;
+    left: 50%;
+    width: 15%;
+    transform: translateX(-50%);
+  }
+  .header-h1-left h1 {
+    text-align: left;
+  }
+  .header-h1-left h1::before,
+  .header-h1-left h1::after {
+    left: 0;
+    transform: translateX(0);
+  }
+  .header-h1-right h1 {
+    text-align: right;
+  }
+  .header-h1-right h1::before,
+  .header-h1-right h1::after {
+    left: unset;
+    right: 0;
+    transform: translateX(0);
+  }
+
+   body {
+    font: 18pt Times New Roman, Times New Roman, sans-serif; 
+    margin: 10; 
+   }
+   a.knopka {
+	  color: #fff; /* цвет текста */
+	  text-decoration: none; 
+	  user-select: none; 
+	  background: rgb(212,75,56); 
+	  padding: .7em 1.5em; /* отступ от текста */
+	  outline: none; /* убирать контур в Mozilla */
+	} 
+	a.knopka:hover { background: rgb(232,95,76); } 
+	a.knopka:active { background: rgb(152,15,0); } 
+	   
+	   
+   h1 {
+    font-size: 36px; 
+    margin: 0; 
+    color: #fi6; 
+   }
+   h2 {
+    margin-top: 5; 
+   }
+   #header { 
+    background: #0080c0; 
+    padding: 10px; 
+   }
+   #sidebar { 
+    float: left; 
+    border: 1px solid #333; 
+    width: 20%; 
+    padding: 5px; 
+    margin: 10px 10px 20px 5px; 
+   }
+   #content { 
+    margin: 10px 5px 20px 25%; 
+    padding: 5px; 
+    border: 1px solid #333; 
+   }
+   #footer { 
+    background: #233; 
+    padding: 5px; 
+    color: #fff; 
+    clear: left; 
+	
+	
+  </style>
+ </head>
+ <script type="text/javascript">
+ 
+   var result;
+    
+   function check()
+ 
+   {
+ 
+      var question;
+      var value1;
+      var value2;
+       
+       
+      question = 1;
+      value1 = 0;
+      value2 = 0;
+       
+       
+      result = "";
+ 
+      var choice;
+      
+      for (question = 1; question <= 3; question++) {
+       
+         var q = document.forms['quiz'].elements['q'+question];
+ 
+            for (var i = 0; i < q.length; i++) {
+               if (q[i].checked) {
+                  choice = q[i].value;
+               }
+            }
+ 
+            if (choice == "value1") {
+               value1++;
+            }
+ 
+            if (choice == "value2") {
+               value2++;
+            }
+ 
+ 
+         }
+ 
+      if (value2 == 0) {
+ 
+         // Нет правильных ответов
+         result = "Вы-дурак";
+		 alert(result)
+      }
+ 
+      else if (value2 == 1) {
+ 
+         // Один правильный ответ
+         result = "Вас трудно назвать человеком";
+         alert(result)
+      }
+ 
+      else if (value2 == 2) {
+ 
+         // Два правильных ответа
+         result = "Вы умнее первоклассника, поздравляю!!!";
+		 alert(result)
+      }
+ 
+      else if (value2 == 3) {
+ 
+         // Три правильных ответа
+         result = "Вы-мегамозг, Стивен Хокинг в сравнении с вами просто жалкий детсадовец"
+		 alert(result)
+      }
+ 
+ 
+      else {
+         result = "404";
+      }
+ 
+      window.location = result + '.html';
+ 
+   }
+ </script>
+ 
+ 
+ 
+</head>
+ <body>
+  <div id="header" class="header-h1 header-h1-left"><h1>Физика для чайников</h1></div>
+  <div id="sidebar">
+	
+
+  
+    <p><input value="Справочный материал"  type="button"   class="btn btn-outline-primary"  onclick="location.href='справочник.html'"  /> </p>
+    <p><input value="Материал для изучения" type="button" class="btn btn-outline-primary" onclick="location.href='материал.html'" /> </p>
+    <p><input value="Банк Задач" type="button" class="btn btn-outline-primary"  onclick="location.href='bank.html'" /></p>
+    <p><input value="Тест по новому материалу" class="btn btn-outline-primary"  type="button" onclick="location.href='тест.html'" /> </p>
+	</div>
+	<div id="content">
+<h2>Введение </h2>
+	<p class="box-shadow1">На нашем сайте вы можете изучить новый материал по физике или тренировать решение задач ЕГЭ</p>
+	<p class="box-shadow2">Во вкладке "Справочнный материал" вы можете обмануружить информацию по переводу одних единиц измерения в другие, что поможет вам в решении задач"</p>
+	<img src="справочный.png" class="image">
+	<p class="box-shadow1" >Во вкладке "Материал для изучения" находятся доходчивые пособия по разным темам школьного раздела физики за 9-11кл</p>
+	<img src="материал.png" class="image">
+	<p class="box-shadow2">Вкладка "Банк задач" содержит задачи на различные темы по физике с возможностью проверки ваших ответов</p>
+	<img src="банк.png" class="image">
+	<p class="box-shadow1">Во вкладке "Тест по новому материалу" находятся небольшие тесты по темам из раздела "Материал для изучения"</p>
+	<img src="тест.png" class="image">
+
+
+
+
+
+
+
+<h1>Foolish Test</h1>
+ 
+<section class="main">
+ 
+<form name="quiz"  class="quizform">
+ 
+<div class="quizsection">
+ 
+ 
+    <h2>Вопрос №1: 2+2*2</h2>
+     
+    <div class="answer">
+        <input name="q1" value="value2" id="value1" type="radio" checked="checked" /> 6
+    </div>
+ 
+    <div class="answer">
+        <input name="q1" value="value1" id="value2" type="radio" /> 4
+    </div>
+ 
+    <div class="answer">
+        <input name="q1" value="value1" id="value3" type="radio" /> 8
+    </div>
+ 
+    <div class="answer">
+        <input name="q1" value="value1" id="value4" type="radio" /> 16
+    </div>
+ 
+    <div class="answer">
+        <input name="q1" value="value1" id="value5" type="radio" /> 666
+    </div>
+ 
+    <div class="answer">
+        <input name="q1" value="value1" id="value6" type="radio" /> 228
+    </div>
+ 
+</div>
+ 
+<div class="quizsection">
+ 
+    <h2>Вопрос №2: 2^3=</h2>
+ 
+    <div class="answer">
+        <input name="q2" value="value1" id="value1" type="radio" checked="checked" /> 2
+    </div>
+ 
+    <div class="answer">
+        <input name="q2" value="value2" id="value2" type="radio" /> 8
+    </div>
+ 
+    <div class="answer">
+        <input name="q2" value="value1" id="value3" type="radio" /> 16
+    </div>
+ 
+    <div class="answer">
+        <input name="q2" value="value1" id="value4" type="radio" /> 1
+    </div>
+ 
+    <div class="answer">
+        <input name="q2" value="value1" id="value5" type="radio" /> 0
+    </div>
+ 
+    <div class="answer">
+        <input name="q2" value="value1" id="value6" type="radio" /> 777
+    </div>
+ 
+</div>
+ 
+<div class="quizsection">
+ 
+    <h2>Вопрос №3(boss lvl): 1 в двоичной системе счисления</h2>
+ 
+    <div class="answer">
+        <input name="q3" value="value1" id="value1" type="radio" checked="checked" /> 1111
+    </div>
+ 
+    <div class="answer">
+        <input name="q3" value="value1" id="value2" type="radio" /> 0
+    </div>
+ 
+    <div class="answer">
+        <input name="q3" value="value2" id="value3" type="radio" /> 1
+    </div>
+ 
+    <div class="answer">
+        <input name="q3" value="value1" id="value4" type="radio" /> 123
+    </div>
+ 
+    <div class="answer">
+        <input name="q3" value="value1" id="value5" type="radio" /> 999
+    </div>
+ 
+    <div class="answer">
+        <input name="q3" value="value1" id="value6" type="radio" /> 6
+    </div>
+ 
+</div>
+ 
+<input value="Узнать результат" type="submit" class="btn btn-outline-dark" onclick = "check()" /> <input value="Начать заново" type="reset" class="btn btn-outline-dark" />
+ 
+</form>
+ 
+</section>
+ 
+
+   <div >        </div>
+   <div id="footer">&copy; Серемин Максим</div>
+  
+ </body>
+</html>

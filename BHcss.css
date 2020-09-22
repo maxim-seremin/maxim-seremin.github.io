@@ -1,0 +1,134 @@
+
+
+body, h1, h2, h3, h4, p, a {  
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+*{
+  box-sizing: border-box;
+}
+.header {
+  height: 100vh;
+  background-color: #eee;
+  background-image: url(https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+  
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 140px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: auto;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display:flex;
+}
+.content{
+  font-size:0;
+  width:790px;
+  margin: 100px auto 50px auto
+}
+.card{
+  width:350px;
+  margin-bottom:60px;
+  margin-right:90px;
+  padding: 45px 45px 70px 45px;
+  box-shadow: 4px 4px 5px black;
+  display: inline-block;
+}
+.no-right-margin {
+    margin-right: 0;
+}
+.card-title{
+  font-size:24px;
+  font-weight:500;
+  margin-bottom:10px;
+}
+.card-text{
+  font-size:16px;
+}
+.card-image{
+  width:100%;
+  margin-bottom:25px;
+}
+
+
+.footer{
+  height:300px;
+  background-color: #000;
+  display: flex;
+}
+.footer-author{
+  font-size:24px;
+  color: #fff;
+  margin: auto;
+}
+
+/* стили для кнопки */
+button {
+  /* размеры кнопки */
+  width: 100px;
+  height: 40px;
+  /* граница кнопки */
+  border: 1px solid black;
+  /* белый фон */
+  background-color: white;
+  /* сложная комбинация, чтобы кнопка была по центру экрана */
+  /* position: absolute;*/
+  /*transform: translate(-50%, -50%);*/
+  /*top: 50%;*/
+  /*left: 50%; */
+  /* уберём подсветку кнопки при клике */
+  outline: none;
+  /* приятно — плавные переходы при наведении */
+  transition: all .4s ease;
+  /* настройки шрифта */
+  font-family: 'Arial Narrow', sans-serif;
+  font-size: 20px;
+}
+
+/* стили для кнопки при наведении */
+button:hover {
+  /* курсор — палец */
+  cursor: pointer;
+  /* малиновая тень */
+  box-shadow: 4px 4px crimson;
+}
+
+.clicked {
+  /* background-color — для цвета фона */
+  background-color: black;
+  /* color — для цвета текста */
+  color: white;
+}
+.clicked3{
+  /* background-color — для цвета фона */
+  background-color: black;
+  /* color — для цвета текста */
+  color: white;
+}
+.clicked4{
+  /* background-color — для цвета фона */
+  background-color: black;
+  /* color — для цвета текста */
+  color: white;
+}
+.clicked5{
+  /* background-color — для цвета фона */
+  background-color: black;
+  /* color — для цвета текста */
+  color: white;
+}
